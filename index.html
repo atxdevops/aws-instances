@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>AWS Instance Types and Performance Notes with Silly GIFs</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -12,6 +12,16 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<!-- Cusomization! -->
+		<style>
+			html.dim .backgrounds {
+ 				-webkit-filter: blur(4px) saturate(.5) brightness(.8);
+ 				-moz-filter: blur(4px) saturate(.7) brightness(.9);
+ 				-o-filter: blur(4px) saturate(.7) brightness(.9);
+ 				-ms-filter: blur(4px) saturate(.7) brightness(.9);
+ 				filter: blur(4px) saturate(.7) brightness(.9);
+			}
+		</style>
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -24,8 +34,196 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<h1>AWS Instances Types and Performance Notes</h1>
+					</section>
+					<section data-background="images/90F8aUepslB84.gif">
+						<h1>AWS Instances Types and Performance Notes</h1>
+						<p  style="background-color: rgba(0, 0, 0, 0.3);">with Silly GIFs</p>
+						<aside class="notes">GIF source http://i.giphy.com/90F8aUepslB84.gif</aside>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/ggl-2.jpg">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">The M Types</h2>
+						<ul style="background-color: rgba(0, 0, 0, 0.3);">
+							<li>M3 - Ivy Bridge</li>
+							<li>M4 - Broadwell/Haswell</li>
+						</ul>
+						<p style="background-color: rgba(0, 0, 0, 0.3);">M stands for...</p>
+						<aside class="notes">IMG source http://www.diptanshu.com/google-server-farm/</aside>
+					</section>
+					<section data-background="images/NotBad.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Meets most needs</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/latelateshow-james-corden-late-show-xTiQyBOIQe5cgiyUPS</aside>
+					</section>
+					<section data-background="images/BidenGlasses.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Mmmm, good choice</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/barack-obama-joe-biden-whcd-996wTZ6ZvaMCc/</aside>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/ggl-2.jpg">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">The C Types</h2>
+						<ul style="background-color: rgba(0, 0, 0, 0.3);">
+							<li>C3 - Ivy Bridge</li>
+							<li>C4 - Haswell</li>
+						</ul>
+						<p style="background-color: rgba(0, 0, 0, 0.3);">C stands for...</p>
+						<aside class="notes">IMG source http://www.diptanshu.com/google-server-farm/</aside>
+					</section>
+					<section data-background="images/visualization.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Clusters of Programs</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/visuals-wgSMZPNuW41TG</aside>
+					</section>
+					<section data-background="images/ComputeIntensive.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Compute Intensive</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/JIX9t2j0ZTN9S</aside>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/ggl-2.jpg">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">The R/X Types</h2>
+						<ul style="background-color: rgba(0, 0, 0, 0.3);">
+							<li>R3 - Ivy Bride (~16G*)</li>
+							<li>R4 - Broadwell (~16G*)</li>
+							<li>X1 - Haswell (976G*)</li>
+						</ul>
+						<p style="background-color: rgba(0, 0, 0, 0.3);">R/X stands for...</p>
+						<aside class="notes">IMG source http://www.diptanshu.com/google-server-farm/</aside>
+					</section>
+					<section data-background="images/DoryRemembered.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Lots of Fast RAM</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/pixar-remember-finding-dory-C7Gvr07En1qec</aside>
+					</section>
+					<section data-background="images/TheGibson.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Xtreme Amounts of RAM</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/hackers-movie-world-xebOoxouppcGs</aside>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/ggl-2.jpg">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">The P/G Types</h2>
+						<ul style="background-color: rgba(0, 0, 0, 0.3);">
+							<li>P2 - Broadwell + K80</li>
+							<li>G2 - Sandy Bridge + CUDA LOL</li>
+						</ul>
+						<p style="background-color: rgba(0, 0, 0, 0.3);">P/G stands for...</p>
+						<aside class="notes">IMG source http://www.diptanshu.com/google-server-farm/</aside>
+					</section>
+					<section data-background="images/nvidia.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">GPU!</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/off-card-gtx-146ooIGDZGKNwI</aside>
+					</section>
+					<section data-background="images/UnlimitedPower.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Plenty of GPU</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/115NBvjY0rnLnW</aside>
+					</section>
+				</section>
+				<section data-background="images/Downhill.gif">
+					<h2 style="background-color: rgba(0, 0, 0, 0.3);">Then things start going downhill</h2>
+					<aside class="notes">GIF source http://giphy.com/gifs/jackie-chan-iZrWNggUqcRRm</aside>
+				</section>
+				<section>
+					<section data-background="images/ggl-2.jpg">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">The T Types</h2>
+						<ul style="background-color: rgba(0, 0, 0, 0.3);">
+							<li>T2 - Xenon LOL</li>
+						</ul>
+						<p style="background-color: rgba(0, 0, 0, 0.3);">T stands for...</p>
+						<aside class="notes">IMG source http://www.diptanshu.com/google-server-farm/</aside>
+					</section>
+					<section data-background="images/ndg-science.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Testing</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/qrlOmXoTgHAd2</aside>
+					</section>
+					<section data-background="images/colbert-poof.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Temporary</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/colbertlateshow-magic-stephen-colbert-late-show-l46CnlK71u7CazMUE</aside>
+					</section>
+					<section data-background="images/MorePlease.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Too Few CPU Credits</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/mpQkJpBMbSxMs</aside>
+					</section>
+					<section data-background="images/RideTheBomb.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Terrible for Production Loads</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/doctor-strangelove-WuJ0NVWjgEZvG</aside>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/ggl-2.jpg">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">The F Types</h2>
+						<ul style="background-color: rgba(0, 0, 0, 0.3);">
+							<li>F1 - Broadwell + FPGA</li>
+						</ul>
+						<p style="background-color: rgba(0, 0, 0, 0.3);">F stands for...</p>
+						<aside class="notes">IMG source http://www.diptanshu.com/google-server-farm/</aside>
+					</section>
+					<section data-background="images/Finance.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Finance</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/KJg6Znn4V1Jcs</aside>
+					</section>
+					<section data-background="images/ConfusedZoom.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">For the love of all that is good why are you in the cloud?!</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/what-confused-seriously-2XskdWuNUyqElkKe4bm</aside>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/ggl-2.jpg">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">The I Types</h2>
+						<ul style="background-color: rgba(0, 0, 0, 0.3);">
+							<li>I3 - Broadwell + Lots of NVMe</li>
+						</ul>
+						<p style="background-color: rgba(0, 0, 0, 0.3);">I stands for...</p>
+						<aside class="notes">IMG source http://www.diptanshu.com/google-server-farm/</aside>
+					</section>
+					<section data-background="images/CONSUME.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">IOPS!</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/perfect-chinese-sync-13flT117mR2VTa</aside>
+					</section>
+					<section data-background="images/ButFast.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">I am prematurely optimizing</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/animated-gif-nascar-13ZL3o9SwwddSw</aside>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/ggl-2.jpg">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">The D Types</h2>
+						<ul style="background-color: rgba(0, 0, 0, 0.3);">
+							<li>D2 - Haswell + TERABYTES of local storage</li>
+						</ul>
+						<p style="background-color: rgba(0, 0, 0, 0.3);">D stands for...</p>
+						<aside class="notes">IMG source http://www.diptanshu.com/google-server-farm/</aside>
+					</section>
+					<section data-background="images/ExcelFail.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Data sets that don't fit in Excel</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/kelly-rowland-gif-no-one-is-allowed-to-forget-this-ldCADp7WPUvxm</aside>
+					</section>
+					<section data-background="images/MahemTantrum.gif">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Don't you understand?</h2>
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">I <em>NEED</em> Hadoop!</h2>
+						<aside class="notes">GIF source http://giphy.com/gifs/mayhem-xTiTnfF8WezDlgl584</aside>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/chinese-take-out-box-promo.jpg">
+						<h2 style="background-color: rgba(0, 0, 0, 0.3);">Takeaways!</h2>
+						<aside class="notes">IMG source http://www.cbsnews.com/news/small-wonders-of-design-the-chinese-take-out-box/</aside>
+					</section>
+					<section id="fragments" data-background="images/RubeGoldberg.gif">
+						<p style="background-color: rgba(0, 0, 0, 0.3);">Nehalem and Sandy Bridge (*2 and *3) are old and probably going away soon</p>
+						<p class="fragment" style="background-color: rgba(0, 0, 0, 0.3);">Understand your application's needs</p>
+						<p class="fragment" style="background-color: rgba(0, 0, 0, 0.3);">Avoid T series for most production loads</p>
+						<p class="fragment" style="background-color: rgba(0, 0, 0, 0.3);">Understand the whole picture</p>
+						<p style="background-color: rgba(0, 0, 0, 0.3);"><span class="fragment">You</span> <span class="fragment">must</span> <span class="fragment">automate</span> <span class="fragment">everything</span> <span class="fragment">to</span> <span class="fragment">survive.</span></p>
+						<aside class="notes">GIF source http://giphy.com/gifs/engineering-rube-goldberg-machine-mYqaRkXyoGbcY</aside>
+					</section>
+				</section>
+				<section data-background="images/TheEndBurningSun.gif">
+					<h2 style="background-color: rgba(0, 0, 0, 0.3);">Thanks!</h2>
+					<aside class="notes">GIF source http://giphy.com/gifs/sun-solar-the-end-110IlProGBQgs8</aside>
+				</section>
 			</div>
 		</div>
 
